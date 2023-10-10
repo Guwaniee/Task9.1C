@@ -6,7 +6,7 @@ function handleLogin() {
   const password = document.getElementById('password').value;
 
   // You can replace this condition with your actual login logic
-  if (email === 'user@example.com' && password === 'password') {
+  if (email === 'guwanisd@gmail.com' && password === '1234') {
       alert('Login successful!');
       
       // Hide the login form
