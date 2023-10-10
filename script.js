@@ -1,6 +1,6 @@
 // Create an array to store user credentials (email and password)
 const users = [
-  { email: 'user@example.com', password: 'password' }
+  { email: 'guwanisd@gmail.com', password: 'Sdgpc201@' }
 ];
 
 // Function to handle the login process
