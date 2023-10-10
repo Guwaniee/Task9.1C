@@ -1,20 +1,10 @@
-// JavaScript for the login popup
-const loginLink = document.getElementById('loginLink');
-const loginModal = document.getElementById('loginModal');
-const closeBtn = document.querySelector('.close');
-
-loginLink.addEventListener('click', () => {
-  loginModal.style.display = 'block';
+document.getElementById('sign-out-button').addEventListener('click', function() {
+  // Add sign-out logic here
+  alert('You have been signed out.');
 });
 
-closeBtn.addEventListener('click', () => {
-  loginModal.style.display = 'none';
+document.getElementById('login-form').addEventListener('submit', function(e) {
+  e.preventDefault(); // Prevent the default form submission
+  // Add login logic here
+  alert('Login functionality will be implemented here.');
 });
-
-window.addEventListener('click', (event) => {
-  if (event.target === loginModal) {
-    loginModal.style.display = 'none';
-  }
-});
-
-// You can add more JavaScript functionality as needed.
