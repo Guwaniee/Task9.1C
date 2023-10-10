@@ -31,4 +31,12 @@ function handleLogin() {
 }
 
 document.getElementById('login-form').addEventListener('submit', function(e) {
-  e.preventDefault(); // Prevent the
+  e.preventDefault(); // Prevent the default form submission
+  handleLogin();
+});
+
+document.getElementById('sign-out-button').addEventListener('click', function() {
+  // Add sign-out logic here
+  alert('You have been signed out.');
+  // You can also add code to hide the "Sign Out" button after signing out.
+});
