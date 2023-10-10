@@ -1,21 +1,82 @@
-/* styles.css */
-body {
-    font-family: Arial, sans-serif;
+/* Add your CSS styles here */
+/* Styles for the navigation bar */
+nav {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
     text-align: center;
 }
 
-h1 {
-    color: #007BFF;
+nav ul {
+    list-style-type: none;
 }
 
-button {
-    background-color: #007BFF;
+nav ul li {
+    display: inline;
+    margin: 0 20px;
+}
+
+nav ul li a {
     color: #fff;
-    padding: 10px 20px;
-    border: none;
+    text-decoration: none;
+}
+
+/* Styles for modals */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+    background-color: #fff;
+    margin: 10% auto;
+    padding: 20px;
+    border-radius: 5px;
+    width: 70%;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
     cursor: pointer;
 }
 
-button:hover {
-    background-color: #0056b3;
+/* Styles for the home page */
+.home {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.home h1 {
+    font-size: 24px;
+}
+
+/* Style for the sign-out button */
+#signOutBtn {
+    display: none;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.hidden {
+    display: none;
 }
