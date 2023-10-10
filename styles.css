@@ -1,82 +1,83 @@
-/* Add your CSS styles here */
-/* Styles for the navigation bar */
-nav {
-    background-color: #333;
-    color: #fff;
-    padding: 10px 0;
-    text-align: center;
+/* Reset some default browser styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 0;
 }
 
 nav ul {
-    list-style-type: none;
+  list-style-type: none;
+  display: flex;
+  justify-content: space-around;
 }
 
 nav ul li {
-    display: inline;
-    margin: 0 20px;
+  margin-right: 20px;
 }
 
 nav ul li a {
-    color: #fff;
-    text-decoration: none;
+  text-decoration: none;
+  color: #fff;
 }
 
-/* Styles for modals */
-.modal {
-    display: none;
-    position: fixed;
-    z-index: 1;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
 }
 
-.modal-content {
-    background-color: #fff;
-    margin: 10% auto;
-    padding: 20px;
-    border-radius: 5px;
-    width: 70%;
+.login {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  text-align: center;
 }
 
-.close {
-    color: #aaa;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
+.login h2 {
+  margin-bottom: 20px;
 }
 
-.close:hover,
-.close:focus {
-    color: #000;
-    text-decoration: none;
-    cursor: pointer;
+form label,
+form input {
+  display: block;
+  margin: 10px 0;
 }
 
-/* Styles for the home page */
-.home {
-    text-align: center;
-    margin-top: 20px;
+form button {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
 }
 
-.home h1 {
-    font-size: 24px;
+.image {
+  margin-top: 20px;
+  text-align: center;
 }
 
-/* Style for the sign-out button */
-#signOutBtn {
-    display: none;
-    margin: 20px auto;
-    padding: 10px 20px;
-    background-color: #333;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
+.image img {
+  max-width: 100%;
+  height: auto;
 }
 
-.hidden {
-    display: none;
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
 }
